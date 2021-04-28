@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "es6"
+	},
+	"include": [, "tests/DocumentTests.js", "tests/AssertionError.js"
+		"/src/**/*.mjs",
+		"tests/**/*.mjs",
+		"tests/runTests.js",
+		"tests/Test.js",
+		"tests/TestRunner.js"
+, "tests/Assert.js"	],
+	"exclude": ["node_modules"]
+}

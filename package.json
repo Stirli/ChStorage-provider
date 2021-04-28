@@ -1,0 +1,40 @@
+{
+    "type": "module",
+    "scripts": {
+        "clean": "cf build",
+        "build": "webpack -p",
+        "watch": "webpack --watch",
+        "flow": "flow"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.13.16",
+        "@babel/core": "^7.13.16",
+        "@babel/plugin-proposal-class-properties": "^7.10.4",
+        "@babel/preset-flow": "^7.13.13",
+        "@types/chrome": "^0.0.135",
+        "@types/jquery": "^3.5.5",
+        "babel-loader": "^8.1.0",
+        "clear-folder": "^2.0.0",
+        "copyfiles": "^2.4.0",
+        "flow-bin": "^0.149.0",
+        "npm-check-updates": "^11.4.1",
+        "qunit": "^2.15.0",
+        "qunit-cli": "^0.2.0",
+        "typescript": "^4.2.4",
+        "webpack": "^4.44.2",
+        "webpack-cli": "^3.3.12"
+    },
+    "babel": {
+        "plugins": [
+            [
+                "@babel/plugin-proposal-class-properties",
+                {
+                    "loose": true
+                }
+            ]
+        ],
+        "presets": [
+            "@babel/preset-flow"
+        ]
+    }
+}
