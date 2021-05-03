@@ -1,6 +1,6 @@
-import { Document } from "../src/chstorage.js";
+import { DataObject } from "../src/chstorage.js";
 
-class MyDoc extends Document {
+class MyDoc extends DataObject {
 	name;
 	age;
 	constructor(name, age) {
